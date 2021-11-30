@@ -1,0 +1,9 @@
+div.card-body
+    div.edit
+      a(href=`/edit/${restaurant.id}`) Edit
+    div.card-details
+      div.category= restaurant.category
+      div.rating
+          -for(let i = 0; i<restaurant.rating; i++)
+              span &#X3b50
+    div.description=restaurant.description
